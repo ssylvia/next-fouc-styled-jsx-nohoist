@@ -1,6 +1,0 @@
-# Build
-**/build
-.storybook/build
-
-# Coverage
-**/coverage

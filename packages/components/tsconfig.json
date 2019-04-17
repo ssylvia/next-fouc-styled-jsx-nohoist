@@ -1,8 +1,0 @@
-{
-  "extends": "../../config/packages/shared-config/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "build"
-  },
-  "include": ["globals.d.ts", "src"]
-}
