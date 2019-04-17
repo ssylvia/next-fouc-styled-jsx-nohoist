@@ -1,0 +1,26 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "private",
+  "private": true,
+  "scripts": {
+    "watch-type": "tsc --emitDeclarationOnly --watch",
+    "watch-babel": "babel src --out-dir build --extensions \".ts,.tsx\" --copy-files --watch --source-maps",
+    "watch": "concurrently npm:watch-*",
+    "dev": "npm run build && npm run watch",
+    "build": "rimraf build && tsc --emitDeclarationOnly && babel src --out-dir build --extensions \".ts,.tsx\" --copy-files --source-maps"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@types/next": "^8.0.3",
+    "@types/styled-jsx": "^2.2.8",
+    "concurrently": "^4.1.0",
+    "next": "^8.1.0",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "styled-jsx": "^3.2.1"
+  }
+}
