@@ -1,0 +1,6 @@
+{
+  "extends": ["shared-config/tslint/tslint-react.json"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "coverage/**/*.js", "node_modules/**/*.ts", "babel.config.js"]
+  }
+}
